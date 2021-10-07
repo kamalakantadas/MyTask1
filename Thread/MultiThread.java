@@ -17,7 +17,7 @@ class MultiThread{
    //display method is what is synchronized means
    // it can access one thread at a time
    //it static because it access by using class MultiThread
-    static synchronized void display(){ 
+    static synchronized void display(){
         for(int xyz = 0;xyz<5;xyz++){
             //current Thread Name will print
             //name is set using Access Class RahulThread or Akansh Thread on lin 7 and 8 respectively
@@ -25,7 +25,7 @@ class MultiThread{
         }
     }
 }
-//Thread 0 extending Thread class 
+//Thread 0 extending Thread class
 //override Run method invoke static display() using MultiThread class
 class RahulThread extends Thread{
     public void run(){
