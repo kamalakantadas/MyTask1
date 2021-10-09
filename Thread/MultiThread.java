@@ -19,6 +19,11 @@ class MultiThread{
    //it static because it access by using class MultiThread
     static synchronized void display(){
         for(int xyz = 0;xyz<5;xyz++){
+            try{
+                Thread.currentThread().sleep(500);
+            }catch (InterruptedException e){
+                
+            }
             //current Thread Name will print
             //name is set using Access Class RahulThread or Akansh Thread on lin 7 and 8 respectively
             System.out.println(Thread.currentThread().getName()+" is Running with value :"+xyz);
